@@ -1,11 +1,12 @@
 import clsx from "clsx";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Keyboard from "../../components/keyboard";
+import dayInfo from "../../static/day.json";
 import styles from "./styles.module.css";
 
 export default function Wordle() {
-  const todayWord = "MOOSE";
-
+  const [todayWord, setTodayWord] = useState<string>("");
   const [guess, setGuess] = useState<string[][]>(
     Array(6).fill(Array(5).fill(""))
   );
@@ -15,6 +16,20 @@ export default function Wordle() {
   const [colorIdxs, setColorIdxs] = useState<string[][]>(
     Array(6).fill(Array(5).fill("none"))
   );
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.isReady) {
+      const { day } = router.query;
+
+      if (day) {
+        const today = Number(day);
+        setTodayWord(dayInfo[today].wordle);
+      }
+      console.log(day);
+    }
+  }, [router.isReady, router.query]);
 
   const checkAnswer = () => {
     const currGuess = guess[guessIdx].join("").toLocaleUpperCase();
@@ -107,10 +122,6 @@ export default function Wordle() {
       setGuess(newGuess); // Update the state with the new guess
     }
   };
-
-  useEffect(() => {
-    console.log(guess);
-  }, [guess]);
 
   return (
     <div>
