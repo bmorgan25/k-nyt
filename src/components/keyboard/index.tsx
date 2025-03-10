@@ -11,7 +11,7 @@ const rows = [
 interface KeyboardProps {
   onKeyPress: (key: string) => void;
 }
-export function Keyboard({ onKeyPress }: KeyboardProps) {
+export default function Keyboard({ onKeyPress }: KeyboardProps) {
   const [pressedKeys, setPressedKeys] = useState<string[]>([]);
 
   const handleKeyPress = (key: string) => {
