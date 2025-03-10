@@ -1,0 +1,37 @@
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.keyboard-key {
+  margin: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 10px;
+}
+
+.keyboard-key.pressed {
+  background-color: #4caf50;
+}
+
+.keyboard-key:active {
+  background-color: #45a049;
+}
+
+.keyboard-key:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
