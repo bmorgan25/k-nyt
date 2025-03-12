@@ -1,3 +1,5 @@
+import { BackButton } from "@/components/backbutton";
+import { Modal } from "@/components/modal";
 import clsx from "clsx";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -16,6 +18,8 @@ export default function Wordle() {
   const [colorIdxs, setColorIdxs] = useState<string[][]>(
     Array(6).fill(Array(5).fill("none"))
   );
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
 
   const router = useRouter();
 
@@ -77,6 +81,15 @@ export default function Wordle() {
     });
 
     setColorIdxs(currColors);
+    if (currGuess === todayWord) {
+      setModalMessage(`Congrats! You solved today's word: ${todayWord}`);
+      setIsModalOpen(true);
+      return;
+    } else if (guessIdx + 1 > 5) {
+      setModalMessage(`Oh no! You couldn't get today's word! Try again!`);
+      setIsModalOpen(true);
+      return;
+    }
     setGuessIdx(guessIdx + 1);
     setCurrIdx(0);
   };
@@ -124,31 +137,42 @@ export default function Wordle() {
   };
 
   return (
-    <div>
-      {/** Wordle section */}
-      <div id="container" className={styles["container"]}>
-        {guess.map((g, idx) => (
-          <div key={`row-${idx}`} className={styles["row"]}>
-            {g.map((char, jdx) => (
-              <div
-                key={`char-${idx}-${jdx}`}
-                className={clsx("row", {
-                  [styles["char-box-green"]]: colorIdxs[idx][jdx] === "green",
-                  [styles["char-box-yellow"]]: colorIdxs[idx][jdx] === "yellow",
-                  [styles["char-box-grey"]]: colorIdxs[idx][jdx] === "grey",
-                  [styles["char-box"]]: colorIdxs[idx][jdx] === "none",
-                })}
-              >
-                {char}
-              </div>
-            ))}
-          </div>
-        ))}
+    <>
+      <div className={styles["container"]}>
+        <BackButton />
+        {/** Wordle section */}
+        <div id="container">
+          {guess.map((g, idx) => (
+            <div key={`row-${idx}`} className={styles["row"]}>
+              {g.map((char, jdx) => (
+                <div
+                  key={`char-${idx}-${jdx}`}
+                  className={clsx("row", {
+                    [styles["char-box-green"]]: colorIdxs[idx][jdx] === "green",
+                    [styles["char-box-yellow"]]:
+                      colorIdxs[idx][jdx] === "yellow",
+                    [styles["char-box-grey"]]: colorIdxs[idx][jdx] === "grey",
+                    [styles["char-box"]]: colorIdxs[idx][jdx] === "none",
+                  })}
+                >
+                  {char}
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+        <div>
+          <Modal
+            isOpen={isModalOpen}
+            message={modalMessage}
+            onClose={() => setIsModalOpen(false)}
+          />
+        </div>
+        {/** Input section */}
+        <div>
+          <Keyboard onKeyPress={handleKeyPress} />
+        </div>
       </div>
-      {/** Input section */}
-      <div>
-        <Keyboard onKeyPress={handleKeyPress} />
-      </div>
-    </div>
+    </>
   );
 }
