@@ -1,4 +1,3 @@
-import { BackButton } from "@/components/backbutton";
 import { Modal } from "@/components/modal";
 import clsx from "clsx";
 import { useRouter } from "next/router";
@@ -139,7 +138,6 @@ export default function Wordle() {
   return (
     <>
       <div className={styles["container"]}>
-        <BackButton />
         {/** Wordle section */}
         <div id="container">
           {guess.map((g, idx) => (

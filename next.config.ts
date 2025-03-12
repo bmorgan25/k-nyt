@@ -8,6 +8,7 @@ const withPWA = require("next-pwa")({
 
 const nextConfig = withPWA({
   reactStrictMode: true,
+  swcMinify: true,
 });
 
 console.log("Next.js PWA Config Loaded ✅");

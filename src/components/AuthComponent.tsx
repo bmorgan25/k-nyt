@@ -17,7 +17,9 @@ export default function AuthComponent() {
 
   return (
     <div>
-      <HomePage />
+      <div>
+        <HomePage />
+      </div>
     </div>
   );
 }
