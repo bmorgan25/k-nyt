@@ -1,7 +1,7 @@
 [
-  { "wordle": "MOOSE" },
-  { "wordle": "SILLY" },
-  { "wordle": "WOOOO" },
-  { "wordle": "GOOSE" },
-  { "wordle": "ILUVU" }
+  { "wordle": "MOOSE", "connections": {}, "mini": {} },
+  { "wordle": "SILLY", "connections": {}, "mini": {} },
+  { "wordle": "WOOOO", "connections": {}, "mini": {} },
+  { "wordle": "GOOSE", "connections": {}, "mini": {} },
+  { "wordle": "PIANO", "connections": {}, "mini": {} }
 ]

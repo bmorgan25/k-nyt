@@ -14,7 +14,7 @@ export function Navbar() {
       >
         ←
       </button>
-      <h1>Wordle</h1>
+      <h1>Kelly's NYT</h1>
     </nav>
   );
 }
