@@ -1,7 +1,137 @@
 [
-  { "wordle": "MOOSE", "connections": {}, "mini": {} },
-  { "wordle": "SILLY", "connections": {}, "mini": {} },
-  { "wordle": "WOOOO", "connections": {}, "mini": {} },
-  { "wordle": "GOOSE", "connections": {}, "mini": {} },
-  { "wordle": "PIANO", "connections": {}, "mini": {} }
+  {
+    "wordle": "MOOSE",
+    "connections": {
+      "group1": {
+        "answer": "Concerts we went to",
+        "options": ["Brisco", "RKS", "Joe P", "Mt Joy"]
+      },
+      "group2": {
+        "answer": "Anniversary Dinners",
+        "options": ["Wye Hill", "Brio", "Angus Barn", "Iso Iso"]
+      },
+      "group3": {
+        "answer": "Things Kelly calls Brantley",
+        "options": ["Dumb bitch", "My love", "Honey", "Baby"]
+      },
+      "group4": {
+        "answer": "Places we eat often",
+        "options": ["Brixx", "Khanki", "Taco Bell", "Bad daddy's"]
+      }
+    },
+    "mini": {}
+  },
+  {
+    "wordle": "SILLY",
+    "connections": {
+      "group1": {
+        "answer": "Gifts we given to each other",
+        "options": ["Shirts", "Doc Martins", "French Press", "Blanket"]
+      },
+      "group2": {
+        "answer": "Texts right before bed",
+        "options": ["Goodnight!!", "MWAH", "I love you", "Sleep well!"]
+      },
+      "group3": {
+        "answer": "Games we play together",
+        "options": [
+          "NYT Games",
+          "Monopoly Go",
+          "Stardew Valley",
+          "Secret Hitler"
+        ]
+      },
+      "group4": {
+        "answer": "What happens when we die",
+        "options": ["CPR", "Mouth-to-mouth", "Defibrillator", "Dr. Moose"]
+      }
+    },
+    "mini": {}
+  },
+  {
+    "wordle": "WOOOO",
+    "connections": {
+      "group1": {
+        "answer": "More concerts we went to",
+        "options": ["COIN", "Flipturn", "Sam Burchfield", "RMCM (kinda)"]
+      },
+      "group2": {
+        "answer": "Early Dates",
+        "options": [
+          "Art museum",
+          "Firebirds",
+          "Briston Maroney",
+          "Village Deli"
+        ]
+      },
+      "group3": {
+        "answer": "Things we did in Asheville",
+        "options": [
+          "Hiking",
+          "Sierra Nevada",
+          "Family dinner",
+          "White elephant"
+        ]
+      },
+      "group4": {
+        "answer": "Things we started and never finished",
+        "options": [
+          "Our movie list",
+          "Outlast",
+          "Breaking Bad",
+          "Crumbl weekly"
+        ]
+      }
+    },
+    "mini": {}
+  },
+  {
+    "wordle": "GOOSE",
+    "connections": {
+      "group1": {
+        "answer": "Bars on Glennwood",
+        "options": ["TEETS", "High Garden", "Cornerstone", "Dogwood"]
+      },
+      "group2": {
+        "answer": "Shows we've binged",
+        "options": ["Severance", "House of Usher", "Hill House", "The Bear"]
+      },
+      "group3": {
+        "answer": "Names Kelly calls Moose",
+        "options": ["Bitch", "Whore", "Freak", "Sir"]
+      },
+      "group4": {
+        "answer": "Parties we've been to together",
+        "options": ["New Years Eve", "Birthdays", "Superbowl", "Friendsgiving"]
+      }
+    },
+    "mini": {}
+  },
+  {
+    "wordle": "PIANO",
+    "connections": {
+      "group1": {
+        "answer": "Brantley's favorite homemade dinners",
+        "options": [
+          "Chicken Alfredo",
+          "Quesadillas",
+          "Steaks",
+          "Teriyaki Chicken"
+        ]
+      },
+      "group2": {
+        "answer": "",
+        "options": ["", "", "", ""]
+      },
+      "group3": {
+        "answer": "",
+        "options": ["", "", "", ""]
+      },
+      "group4": {
+        "answer": "Places we've been in Wilkes",
+        "options": ["Darios", "Your house", "Roller rink", "Wedding"]
+      }
+    },
+    "mini": {}
+  }
 ]
