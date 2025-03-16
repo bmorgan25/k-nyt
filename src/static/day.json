@@ -120,12 +120,12 @@
         ]
       },
       "group2": {
-        "answer": "",
-        "options": ["", "", "", ""]
+        "answer": "Things that go with cuddling",
+        "options": ["Naps", "Reels", "Kisses", "Heated Blanket"]
       },
       "group3": {
-        "answer": "",
-        "options": ["", "", "", ""]
+        "answer": "Names of our future pets",
+        "options": ["Goose", "Zeus", "Wiley", "Moose"]
       },
       "group4": {
         "answer": "Places we've been in Wilkes",
