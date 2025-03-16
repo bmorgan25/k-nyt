@@ -4,6 +4,7 @@ import dayInfo from "../../static/day.json";
 import styles from "./styles.module.css";
 
 export default function HomePage() {
+  // don't need this, just make an array of 5
   const [day, setDay] = useState<any[]>([]);
 
   const router = useRouter();

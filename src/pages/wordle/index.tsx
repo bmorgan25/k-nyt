@@ -100,7 +100,7 @@ export default function Wordle() {
       if (currIdx === 5) {
         checkAnswer();
       }
-    } else if (key === "Delete") {
+    } else if (key === "←") {
       const newGuess = [...guess];
       newGuess[guessIdx] = [...guess[guessIdx]];
 
