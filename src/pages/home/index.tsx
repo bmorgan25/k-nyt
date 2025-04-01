@@ -37,9 +37,9 @@ export default function HomePage() {
             </div>
             <div
               className={styles["game-card"]}
-              onClick={() => routeToGame("mini", idx)}
+              onClick={() => routeToGame("strands", idx)}
             >
-              Mini
+              Strands
             </div>
           </div>
         </section>

@@ -19,7 +19,110 @@
         "options": ["Brixx", "Khanki", "Taco Bell", "Bad daddy's"]
       }
     },
-    "mini": {}
+    "strands": {
+      "prompt": "Another day at the office",
+      "span": "SEVERANCE",
+      "strandsMap": [
+        ["H", "A", "R", "M", "O", "Y"],
+        ["N", "H", "M", "A", "R", "N"],
+        ["O", "E", "L", "L", "Y", "K"],
+        ["V", "H", "I", "C", "K", "E"],
+        ["E", "C", "L", "A", "N", "C"],
+        ["D", "I", "M", "R", "D", "Y"],
+        ["S", "E", "V", "E", "N", "L"],
+        ["E", "A", "G", "A", "A", "N"]
+      ],
+      "answerCoords": [
+        {
+          "answer": "MARK",
+          "coords": [
+            [1, 2],
+            [1, 3],
+            [1, 4],
+            [2, 5]
+          ]
+        },
+        {
+          "answer": "EAGAN",
+          "coords": [
+            [7, 0],
+            [7, 1],
+            [7, 2],
+            [7, 3],
+            [6, 4]
+          ]
+        },
+        {
+          "answer": "DYLAN",
+          "coords": [
+            [5, 4],
+            [5, 5],
+            [6, 5],
+            [7, 4],
+            [7, 5]
+          ]
+        },
+        {
+          "answer": "HELLY",
+          "coords": [
+            [1, 1],
+            [2, 1],
+            [2, 2],
+            [2, 3],
+            [2, 4]
+          ]
+        },
+        {
+          "answer": "HARMONY",
+          "coords": [
+            [0, 0],
+            [0, 1],
+            [0, 2],
+            [0, 3],
+            [0, 4],
+            [1, 5],
+            [0, 5]
+          ]
+        },
+        {
+          "answer": "DEVON",
+          "coords": [
+            [5, 0],
+            [4, 0],
+            [3, 0],
+            [2, 0],
+            [1, 0]
+          ]
+        },
+        {
+          "answer": "SEVERANCE",
+          "coords": [
+            [6, 0],
+            [6, 1],
+            [6, 2],
+            [6, 3],
+            [5, 3],
+            [4, 3],
+            [4, 4],
+            [4, 5],
+            [3, 5]
+          ]
+        },
+        {
+          "answer": "MILCHICK",
+          "coords": [
+            [5, 2],
+            [5, 1],
+            [4, 2],
+            [4, 1],
+            [3, 1],
+            [3, 2],
+            [3, 3],
+            [3, 4]
+          ]
+        }
+      ]
+    }
   },
   {
     "wordle": "SILLY",
@@ -46,7 +149,7 @@
         "options": ["CPR", "Mouth-to-mouth", "Defibrillator", "Dr. Moose"]
       }
     },
-    "mini": {}
+    "strands": {}
   },
   {
     "wordle": "WOOOO",
@@ -83,7 +186,7 @@
         ]
       }
     },
-    "mini": {}
+    "strands": {}
   },
   {
     "wordle": "GOOSE",
@@ -105,7 +208,7 @@
         "options": ["New Years Eve", "Birthdays", "Superbowl", "Friendsgiving"]
       }
     },
-    "mini": {}
+    "strands": {}
   },
   {
     "wordle": "PIANO",
@@ -132,6 +235,6 @@
         "options": ["Darios", "Your house", "Roller rink", "Wedding"]
       }
     },
-    "mini": {}
+    "strands": {}
   }
 ]

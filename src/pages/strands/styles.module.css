@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.prompt-container {
+  border: solid 1px lightblue;
+  padding: 10px;
+}
+
+.map-row {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.map-item {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20pt;
+  padding: 7px;
+}
+
+.map-item-selected {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20pt;
+  padding: 7px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.map-item-correct {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20pt;
+  padding: 7px;
+  background-color: rgb(31, 188, 255);
+  border-radius: 50%;
+}
+
+.guess-btn {
+  background-color: rgb(26, 66, 242);
+  color: white;
+  padding: 10px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
